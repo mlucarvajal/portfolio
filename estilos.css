@@ -1,34 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
-    color: #000;
-    background-color: #f2f2f2;
-    
+
     place-items: center;
-}
-.portafolio{
-    background-color: #000000;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.textPort{
     
+}
+.bg-dark{
+    background-color: #000 !important;
+}
+.secciones{
+    -webkit-text-stroke: 2px black;
+    padding-bottom: 70px;
+}
+/*-----JUMBOTRON------*/
+
+.jumbotron{
+    background-color: #000;
+    color: #fff;
+    min-height: 100vh;
+    padding-top: 200px;
+}
+.jumbotron-text{
+    padding-top: 50px;
     color: transparent;
     width: 100%;
     text-align: center;
     text-transform: uppercase;
     font-size: 150px;
     font-weight: bold;
-    background-image: url(./imagenes/orgullo.jpg);
+    background-image: url(./img/orgullo.jpg);
     background-position-y: 60%;
     background-size: cover;
     -webkit-background-clip:text;
@@ -36,13 +41,36 @@ body{
     -webkit-text-fill-color: transparent;
     font-family: 'Anton', sans-serif;
 }
-
-
-
-
+.animation{
+    padding-left: 30px;
+    letter-spacing: 10px;
+    color: #e5e5e5;
+    font-size: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 45px;
+    border-right: .05em solid #18bdec;
+    animation: escribir-lc 5s steps(33) 1s 1 normal both, cursor 500ms steps(1) none;
+    font-family: 'Anton', sans-serif;
+}
+.animation-dev{
+    color: #e5e5e5;
+    letter-spacing: 10px;
+    font-size: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 38px;
+    border-right: .05em solid #18bdec;
+    animation: escribir 5s steps(33) 6s 1 normal both, cursor 500ms steps(1) 7s infinite;
+    font-family: 'Anton', sans-serif;
+}
 @keyframes escribir{
     from{width: 0;}
-    to{width: 99%;}
+    to{width: 37%;}
+}
+@keyframes escribir-lc{
+    from{width: 0;}
+    to{width: 30%;}
 }
 @keyframes cursor{
     50%{
@@ -50,101 +78,103 @@ body{
     }
     
 }
+@media  screen and ( max-width: 992px){
+        .jumbotron-text{
+            font-size: 90px;
+            
+        }
+        .animation{
+            font-size: 30px;
+        }
+        .animation-dev{
+            font-size: 30px;
+        }
+        @keyframes escribir{
+            from{width: 0;}
+            to{width: 50%;}
+        }
+}
+@media  screen and (max-width: 768px) {
+    .jumbotron-text{
+        font-size: 90px;
+        padding-top: 30px;
+    }
+    .animation{
+        font-size: 25px;
+        padding-left: 30px;
+    }
+    .animation-dev{
+        font-size: 22px;
+    }
+    @keyframes escribir{
+        from{width: 0;}
+        to{width: 90%;}
+    }
+    @keyframes escribir-lc{
+        from{width: 0;}
+        to{width: 85%;}
+    }
 
-.margin{
-
-    margin-left: 70%;
 }
-
-
-.dev{
-    
-    color: #e5e5e5;
-    font-size: 50px;
-    
-    overflow: hidden;
-   white-space: nowrap;
-   font-size: 40px;
-   border-right: .15em solid #18bdec;
-   animation: escribir 5s steps(33) 1s 1 normal both, cursor 500ms steps(1) infinite;
-   font-family: 'Courier Prime', monospace;
-
-    
-    
+/*---acerca de---*/
+.img-redonda {
+    width:300px;
+    height:300px;
+    border-radius:160px;
+    border:10px solid #fcbf49;
+  
 }
-.bg-dark{
-    background-color: #000000 !important;
-    
+.img-div{
+    padding-left: 50px;
+    padding-bottom: 15px;
+    padding-top: 20px;
 }
-.navbar-dark{
-    background-color: #000000 !important;
-   
-}
-.educacionTit{
-    background-image: url(./imagenes/violeta.jpg);
-    background-size: cover;
-    color: #000;
-    min-height: 100vh;
-    padding:300px;
-    
-}
-.educacion{
-    min-height: 100vh;
-    
-    align-items: center;
-    justify-content: center;
-}
-.acercaDe{
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.experiencia{
-    min-height: 100vh;
-    
-    align-items: center;
-    justify-content: center;
-}
-.experiencia-bg{
-    background-image: url(./imagenes/rojo.jpg);
-    min-height: 100vh;
-    background-size: cover;
-}
-
-.contacto{
-    min-height: 100vh;
-    background-image: url(./imagenes/auris.jpg);
-    background-position-y: top;
-    background-size: cover;
-    min-height: 100vh;
-    align-items: center;
-    justify-content: center;
-    
-}
-footer{
-    min-height: 20vh;
-    background-color: #000000;
-    color: #e5e5e5;
-}
-.p-acercaDe{
-    padding: 200px;
-}
-.p-subtittulos{
-    font-family: 'Courier Prime', monospace;
+.tit-areas{
+    letter-spacing: 10px;
     font-size: 30px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-family: 'Anton', sans-serif;
+    
+}
+.container-lc{
+    min-height: 100vh;
+}
+.subtitulos{
+    padding-top: 50px;
+    color: transparent;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 150px;
     font-weight: bold;
     
+    background-position-y: 60%;
+    background-size: cover;
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Anton', sans-serif;
 }
-.p-educacion{
-    padding: 200px;
+/*-----educacion y skills-----*/
+.bg-educacion{
+    background-image: url(./img/verde.jpg);
+    font-size: 90px;
 }
-.p-experiencia{
-    padding: 200px;
+
+/*----experiencia----*/
+.bg-exp{
+    background-image: url(./img/rojo.jpg);
+    font-size: 70px;
 }
-.p-contacto{
-    padding: 200px;
+
+/*-------contacto------*/
+.bg-contacto{
+    background-image: url(./img/auris.jpg);
+    background-size: cover;
+    padding-bottom: 100px;
 }
-.p-footer{
-    padding: 100px;
+/*-----footer------*/
+.bg-footer{
+    background-color: #000;
 }
