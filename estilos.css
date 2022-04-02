@@ -108,11 +108,11 @@ body{
     }
     @keyframes escribir{
         from{width: 0;}
-        to{width: 90%;}
+        to{width: 332px;}
     }
     @keyframes escribir-lc{
         from{width: 0;}
-        to{width: 85%;}
+        to{width: 301px;}
     }
 
 }
@@ -161,11 +161,19 @@ body{
     background-image: url(./img/verde.jpg);
     font-size: 90px;
 }
+.educacion{
+    background-image: url(./img/verde.jpg);
+    background-size: cover;
+}
 
 /*----experiencia----*/
 .bg-exp{
-    background-image: url(./img/rojo.jpg);
+    background-image: url(./img/violeta.jpg);
     font-size: 70px;
+}
+.expe{
+    background-image: url(./img/violeta.jpg);
+    background-size: cover;
 }
 
 /*-------contacto------*/
@@ -174,6 +182,7 @@ body{
     background-size: cover;
     padding-bottom: 100px;
 }
+
 /*-----footer------*/
 .bg-footer{
     background-color: #000;
