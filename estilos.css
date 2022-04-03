@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -235,8 +237,23 @@ body{
     .button-w {
        font-size: 14px;
        padding: 12px 20px;
-       bottom: 20px;
+       bottom: 70px;
        right: 20px;
    }
 
+   }
+
+   /**/
+
+   .parrafos{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+   }
+   .parrafos-tit{
+       font-size: 22px;
+       font-weight: bold;
+       padding-bottom: 5px;
+   }
+   .ul-expe{
+       padding-top: 110px;
    }
