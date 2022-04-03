@@ -5,14 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="./estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <title>Document</title>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">PORTFOLIO</a>
+              <a class="navbar-brand" href="index.html">PORTFOLIO</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -20,16 +22,16 @@
                 <ul class="navbar-nav mr-auto">
                   
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Acerca de</a>
+                    <a class="nav-link" href="#acerca">Acerca de</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Educacion</a>
+                    <a class="nav-link" href="#educacion">Educacion</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link"  href="#">Experiencia</a>
+                    <a class="nav-link"  href="#experiencia">Experiencia</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link"  href="#">Contacto</a>
+                    <a class="nav-link"  href="#contacto">Contacto</a>
                   </li>
                 </ul>
               </div>
@@ -58,8 +60,8 @@
                   </div>
               
       
-              <div class="col-xs-12 col-lg-6">
-                <h3 class="tit-areas text-center">Acerca de mi</h3>
+              <div class="text-center col-xs-12 col-lg-6">
+                <h3 id="acerca" class="tit-areas ">Acerca de mi</h3>
                 <p>
                   Estudiante de la carrera de Programacion, en constante capacitacion.
                 </p>
@@ -79,67 +81,82 @@
           
     </section>
 
-    <section class="container-fluid container-lc">
+    <section id="educacion" class="container-fluid container-lc">
         
             <div class="row">
       
-              <div class="col-xs-12 col-lg-6">
-                <h2 class="text-center jumbotron-text secciones bg-educacion">EDUCACION Y SKILLS</h2>
+              <div class="seccion-pad col-xs-12 col-lg-6">
+                <h2  class="text-center jumbotron-text secciones bg-educacion">EDUCACION Y SKILLS</h2>
               </div>
 
-              <div class="educacion col-xs-12 col-lg-6">
-                <h3 class="text-center tit-areas " >EDUCACION</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aliquam
-                  corporis est quia nam. Quod esse quidem praesentium natus saepe,
-                  perspiciatis sapiente ducimus nobis error et incidunt omnis! Dolore,
-                  quasi.
-                </p>
-                <h3 class="text-center tit-areas">SKILLS</h3>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-                  officia, sequi modi obcaecati consectetur, error eligendi eum
-                  inventore iste cupiditate officiis esse quos dolorum, animi
-                  dignissimos aliquid impedit voluptatem perferendis.
-                </p>
+              <div class="text-center educacion col-xs-12 col-lg-6">
+                <h3 class=" tit-areas " >EDUCACION</h3>
+                <p>Tecnicatura universitaria en Programacion</p> <p>Universidad Tecnologica Nacional/ 2020-En curso</p>
+                <p>Desarrollo Web</p><p>CoderHouse/Finalizado</p>
+                <p>Javascript</p><p>CoderHouse/Finalizado</p>
+                <p>React js</p><p>CoderHouse/En curso</p>
+                <h3 class="tit-areas">SKILLS</h3>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>Bootstrap</p>
+                <p>Javascript</p>
+                <p>React js</p>
+                <p>C#</p>
+                <p>SQLServer</p>
               
     </section>
-    <section class="container-fluid container-lc">
+    <section id="experiencia" class="container-fluid container-lc">
             
             <div class="row">
-                <div class="col-xs-12 col-lg-6">
-                    <h2 class="text-center jumbotron-text secciones bg-exp">EXPERIENCIA</h2>
+                <div class="seccion-pad col-xs-12 col-lg-6">
+                    <h2  class="text-center jumbotron-text secciones bg-exp">EXPERIENCIA</h2>
                   </div>
-                </div>
-              <div class="expe col-xs-12 col-lg-6">
+                
+              <div class="  expe col-xs-12 col-lg-6">
                 <h3 class="text-center tit-areas" >EXPERIENCIA LABORAL</h3>
                 <ul class="list-unstyled"> 
-                  <li>experiencia1</li>
-                  <li>experiencia2</li>
+                  <li>Gestor de Cobranzas</li>
+                    <ul>
+                      <li>Multiconex/ 2016- Actualidad</li>
+                    </ul>
+                  <li>Representante de atención al cliente</li>
+                    <ul>
+                        <li>Atento/ 2011-2014</li>
+                    </ul>
                 </ul>
               </div>
+            </div>
             
           
     </section>
 
-    <section class="container-fluid">
+    <section id="contacto" class="container-fluid">
         
             <div class="row">
-              <div class="bg-contacto col-xs-12 col-lg-6">
-                <h3 class="text-center tit-areas" >CONTACTO</h3>
+              <div class="text-center  contacto bg-contacto col-xs-12">
+                <h3  class="tit-areas" >CONTACTO</h3>
                 <ul class="list-unstyled">
-                  <li>email</li>
-                  <li>telefono</li>
-                  <li>linkedin</li>
+                  <li>Email: mlu.carvajal@gmail.com</li>
+                  <li>Teléfono: 0351- 158088132</li>
+                  <li>LinkeIn: </li>
                 </ul>
               </div>
               
             </div>
           </div>
     </section>
+    <div class=" container">
+      <a href="index.html" class="button btn btn-primary btn-xs"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-triangle-fill" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M7.022 1.566a1.13 1.13 0 0 1 1.96 0l6.857 11.667c.457.778-.092 1.767-.98 1.767H1.144c-.889 0-1.437-.99-.98-1.767L7.022 1.566z"/>
+      </svg></a>
+      <a href="#" class="button-w btn btn-success btn-xs"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+        <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+      </svg></a>
+      
+    </div>
 
     <footer>
-        <div class="container bg-footer ">
+        <div class="container-fluid bg-footer ">
             <p class="text-center tit-areas">Lucia carvajal</p>
         </div>
     </footer>

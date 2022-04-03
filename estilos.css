@@ -16,14 +16,20 @@ body{
 .secciones{
     -webkit-text-stroke: 2px black;
     padding-bottom: 70px;
+    
 }
+.seccion-pad{
+    padding-top: 50px;
+}
+    
+
 /*-----JUMBOTRON------*/
 
 .jumbotron{
     background-color: #000;
     color: #fff;
     min-height: 100vh;
-    padding-top: 200px;
+   
 }
 .jumbotron-text{
     padding-top: 50px;
@@ -49,8 +55,8 @@ body{
     overflow: hidden;
     white-space: nowrap;
     font-size: 45px;
-    border-right: .05em solid #18bdec;
-    animation: escribir-lc 5s steps(33) 1s 1 normal both, cursor 500ms steps(1) none;
+    
+    animation: escribir-lc 3s steps(15) 1s 1 normal both;
     font-family: 'Anton', sans-serif;
 }
 .animation-dev{
@@ -60,18 +66,19 @@ body{
     overflow: hidden;
     white-space: nowrap;
     font-size: 38px;
-    border-right: .05em solid #18bdec;
-    animation: escribir 5s steps(33) 6s 1 normal both, cursor 500ms steps(1) 7s infinite;
+    
+    animation: escribir 3s steps(18) 6s 1 normal both, cursor 500ms steps(1) 6s infinite;
     font-family: 'Anton', sans-serif;
-}
-@keyframes escribir{
-    from{width: 0;}
-    to{width: 37%;}
 }
 @keyframes escribir-lc{
     from{width: 0;}
-    to{width: 30%;}
+    to{width: 416px;}
 }
+@keyframes escribir{
+    from{width: 0;}
+    to{width: 450px;}
+}
+
 @keyframes cursor{
     50%{
         border-color: transparent;
@@ -106,6 +113,9 @@ body{
     .animation-dev{
         font-size: 22px;
     }
+    .jumbotron{
+        padding-top: 200px;
+    }
     @keyframes escribir{
         from{width: 0;}
         to{width: 332px;}
@@ -114,7 +124,11 @@ body{
         from{width: 0;}
         to{width: 301px;}
     }
+    
 
+}
+.container-lc{
+    min-height: 100vh;
 }
 /*---acerca de---*/
 .img-redonda {
@@ -137,9 +151,7 @@ body{
     font-family: 'Anton', sans-serif;
     
 }
-.container-lc{
-    min-height: 100vh;
-}
+
 .subtitulos{
     padding-top: 50px;
     color: transparent;
@@ -159,12 +171,14 @@ body{
 /*-----educacion y skills-----*/
 .bg-educacion{
     background-image: url(./img/verde.jpg);
-    font-size: 90px;
-}
+    font-size: 70px;
+ }   
 .educacion{
     background-image: url(./img/verde.jpg);
     background-size: cover;
 }
+    
+
 
 /*----experiencia----*/
 .bg-exp{
@@ -174,16 +188,55 @@ body{
 .expe{
     background-image: url(./img/violeta.jpg);
     background-size: cover;
+    min-height:100vh;
 }
 
 /*-------contacto------*/
 .bg-contacto{
     background-image: url(./img/auris.jpg);
     background-size: cover;
+    background-position: center;
     padding-bottom: 100px;
+}
+.contacto{
+    min-height: 100vh;
 }
 
 /*-----footer------*/
 .bg-footer{
     background-color: #000;
 }
+.button{
+    
+    position: fixed;
+	bottom: 40px;
+	right: 40px;
+	
+	z-index: 99;
+}
+@media screen and (max-width: 768px) {
+    .button {
+       font-size: 14px;
+       padding: 12px 20px;
+       bottom: 20px;
+       right: 20px;
+   }
+
+   }
+   .button-w{
+    
+    position: fixed;
+	bottom: 88px;
+	right: 40px;
+	
+	z-index: 99;
+}
+@media screen and (max-width: 768px) {
+    .button-w {
+       font-size: 14px;
+       padding: 12px 20px;
+       bottom: 20px;
+       right: 20px;
+   }
+
+   }
